@@ -91,11 +91,31 @@ Header에 작성된 토큰의 알고리즘으로
 
 암호화 알고리즘 ({Header값 . Payload값 . 개인키})
 
-JWT Token은 
-Base64UrlEncode (
-    "Header(text).Payload(text).Signature(암호화된 text)"   
-)
+JWT Token은 "Header(Base64-Encode-text).Payload(Base64-Encode-text).Signature(secret 256bit String)"   
 
-그래서 JWT 토큰이 보낼때 Payload, Header를 변경하더라도 Signature를 
+그래서 JWT 토큰이 보낼때 Payload, Header를 변경하더라도 Signature를 통해서 유효성을 검사할 수 있다.
 
-Signature에 사용하는 개인키는 
+Signature에 사용하는 개인키는 256-bit 를 미리 결정해서 안전하게 관리한다.
+
+
+# OAuth 2.0
+ : 
+
+
+1. 어떻게 등장했는가??
+ > 
+
+OAuth가 생기기 이전에 다른 서비스의 API를 사용하기 위해서는 나의 서비스에서 유저의 ID/PW를 관리할 필요가 있다.
+
+ex: 계좌를 한 곳에서 관리해주는 서비스가 있음 ( Toss )
+    내 계좌 정보를 확인하기 위해서 대구은행에 정보를 주세요!
+    > 
+
+
+만약 특정 유저의 서비스 이력에 대한 정보가 필요하다고 가정
+
+ex
+
+
+
+

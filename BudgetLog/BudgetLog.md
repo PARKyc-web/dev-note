@@ -1,5 +1,9 @@
 # BudgetLog Dev-note
 
+```
+VSCODE Extension - ERD Editor로 ERD 작성함.
+```
+
 
 > JPA로 만든 테이블의 컬럼의 정렬이 안됨
 > ``` 
@@ -18,3 +22,4 @@
 > how-2) profile 을 2개 만들어서 관리한다??
 >        => dev, prod yaml 파일을 2개 만들어서 처음에 dev에서만 DDL이 동작하도록 설정
 > ``` 
+

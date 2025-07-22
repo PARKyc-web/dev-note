@@ -48,5 +48,9 @@ USER_AUTH, USER_INFO 2개의 테이블로 나눈 이유
 access denied for user 'budgetlog'@'localhost' (using password: yes)
 
 budgetlog 계정의 만료?? 됨에 따라서 발생한 오류로 일단 파악함..
+원인은 정확하게 파악하지 못했으나, budgetlog 계정이 삭제됨에 따라서 접속이 안됨
+
+너무 오랫동안 사용하지 않아서 만료 또는 삭제된것으로 판단됨.
+
 
 ```
